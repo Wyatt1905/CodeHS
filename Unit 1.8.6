@@ -1,0 +1,50 @@
+// This program shows Karel the Dog jumping over 2 Hurdles
+
+// From 4 to 29 the dog is Constructing a tower, the main task of assignment.
+function start(){
+	move();
+	turnLeft();
+	putBall();
+	move();
+	putBall();
+	move();
+	putBall();
+	move();
+	turnRight();
+	move();
+	turnRight();
+	move();
+	move();
+	move();
+	turnLeft();
+	move();
+	turnLeft();
+	putBall();
+	move();
+	putBall();
+	move();
+	putBall();
+	move();
+	turnRight();
+}
+
+/* Training commands, what this shows is that Karel cannot turn right by default
+ * but using functions we can have Karel turn right by having it turn left using
+ * the command 3 times inside the function.
+ */
+ 
+function turnRight(){
+    turnLeft();
+    turnLeft();
+    turnLeft();
+}
+
+// An indicator to myself to know how tall it is from designing this program.
+function buildTower3(){
+    putBall();
+	move();
+	putBall();
+	move();
+	putBall();
+	move();
+}
