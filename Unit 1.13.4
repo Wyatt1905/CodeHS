@@ -1,0 +1,25 @@
+function start(){
+    // Karel should jump hurdles
+    // The world is ALWAYS 14 avenues long
+    // 14 is a fixed number
+    
+    for(var i =0; i<13; i++){
+        //check is front is blocked
+        if(frontIsBlocked()){
+            jumpHurdle();
+          }else{
+             move();
+        }
+    }
+}
+
+
+function jumpHurdle(){
+    turnLeft();
+    move();
+    turnRight();
+    move();
+    turnRight();
+    move();
+    turnLeft();
+}
